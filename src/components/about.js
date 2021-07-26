@@ -61,7 +61,7 @@ const About = () => {
                         <strong>IDEALNY DOM DLA 2-3 RODZIN lub grupy znajomych</strong>
                     </p>
                 </div>
-                <div className={vision} style={{ transform: `translateY(-${yOffSet * 0.2}px)`, transitionDelay: '0.1s' }}>
+                <div className={vision} style={{ transform: `translateY(-${yOffSet * 0.2}px)`, transitionDelay: '0.2s' }}>
                     <h3>W okolicy:</h3>
                     <ul>
                         <li>
@@ -81,7 +81,7 @@ const About = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={vision} style={{ transform: `translateY(-${yOffSet * 0.1}px)`, transitionDelay: '0.3s' }}>
+                <div className={vision} style={{ transform: `translateY(-${yOffSet * 0.1}px)`, transitionDelay: '0.5s' }}>
                     <h3>Informacje o wynajmie:</h3>
                     <p><strong>Cena wynajmu całego domu za dobę:</strong> 800 zł w sezonie grzewczym, 700 zł w sezonie letnim</p>
                     <p>W okresie Bożego Narodzenia - Sylwestra cena za dobę wynosi 1.000 zł</p>
