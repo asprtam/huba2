@@ -65,6 +65,11 @@ h1, h2, h3, h4, h5, a {
                 margin-bottom: $spacing;
             }
             p {
+                margin: 0 auto;
+                width: 60%;
+                font-size: 1.05vw;
+                letter-spacing: $h3Size/15;
+                line-height: 1.6vw;
                 text-align: center;
             }
         }
