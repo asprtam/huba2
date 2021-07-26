@@ -1,0 +1,190 @@
+$spacing: 2vw;
+$h1Size: 6vw;
+$h2Size: 1.2vw;
+$h3Size: 1vw;
+$h4Size: 2vw;
+$h5Size: 1.5vw;
+body {
+    background: #F0F2F1;
+    //font-family: 'Raleway';
+    font-family: 'Open Sans';
+    height: 500vh;
+}
+h1, h2, h3, h4, h5, a {
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+.huba {
+    padding: $spacing;
+    header {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: $spacing;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            z-index: 2;
+        }
+        div {
+            z-index: 5;
+            position: absolute;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                text-align: center;
+                font-size: $h1Size;
+                font-weight: 700;
+                letter-spacing: $h1Size/12;
+                margin-bottom: 1vw;
+            }
+            h2 {
+                text-align: center;
+                font-weight: 700;
+                font-size: $h2Size;
+                letter-spacing: 0vw;
+            }
+        }
+    }
+    .about {
+        margin-top: $spacing*2.3;
+        .full {
+            width: 100%;
+            margin-bottom: $spacing*2.5;
+            h2 {
+                color: #ACBDB3;
+                text-align: center;
+                font-size: $h4Size;
+                letter-spacing: $h4Size/12;
+                margin-bottom: $spacing;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .cont {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: space-evenly;
+            div {
+                position: relative;
+                width: 27%;
+                padding: $spacing/2;
+                text-align: justify;
+                transition: 0.7s opacity ease-in-out;
+            }
+            // div:before {
+            //     content: ' ';
+            //     position: absolute;
+            //     width: $spacing*2;
+            //     height: $spacing*2;
+            //     left: 50%;
+            //     transform: translate(-50%, -120%);
+            //     background: #ACBDB3;
+            // }
+            //sex
+        }
+        h3 {
+            margin: $spacing*0.5 0;
+            font-size: $h2Size;
+            letter-spacing: $h2Size/12;
+            color: 000;
+            font-weight: 700;
+        }
+        li:before {
+            content: '';
+            position: absolute;
+            height: $spacing/4;
+            width: $spacing/4;
+            top: $spacing*0.35;
+            transform: translate(-200%, 0%,);
+            border: 1.5px solid #BF9599;
+        }
+        li {
+            position: relative;
+            list-style-type:none;
+            margin-left: $spacing/2;
+            margin-bottom: $spacing*0.2;
+            font-size: $spacing/2;
+            line-height: $spacing*0.75;
+            li {
+                margin-bottom: unset !important;
+                margin-left: $spacing/2;
+            }
+            li:before {
+                border: 1.5px solid #ACBDB3;
+            }
+        }
+        p {
+            font-size: $spacing/2;
+            line-height: $spacing*0.75;
+        }
+    }
+}
+nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding:$spacing/2;
+    z-index: 10;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s background ease-in-out;
+    ul {
+        margin-left: $spacing;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        li {
+            margin: $spacing/2;
+            a {
+                font-size: $h3Size;
+                letter-spacing: $h3Size/18;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: 0.5s all ease-in-out;
+            }
+            a:hover {
+                color: #ACBDB3;
+            }
+        }
+    }
+}
+.notMoved {
+    position: absolute;
+    background: none;
+    top: $spacing;
+}
+.moved {
+    top: 0vw;
+    background: #F0F2F1;
+    //border-bottom: 1px #BF9599 solid;
+    border-bottom: 0.5px #000 solid;
+    position: fixed;
+    ul {
+        li {
+            a {
+                color: #BF9599;
+            }
+        }
+    }
+}
+strong {
+    color: #BF9599;
+    font-weight: 600;
+}
+.hidden {
+    opacity: 0;
+}
+.shown {
+    opacity: 1;
+}
